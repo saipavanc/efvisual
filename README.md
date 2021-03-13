@@ -18,14 +18,22 @@ rf = reference_frame(3, 20)
 ```
 The first parameter sets the range of the x and y axis and the second parameter shows the number of points considered on each axis. The code is not very efficient. so increasing the number beyond 30 might make it very slow. I found that 20 points are enough to visualise the fields on a quivr plot.
 
+The object reference_frame also has a method E_fields to generate the fields in a given frame. One challenge was to calculate the retarded times for an arbitrary trajectory. This got me held up, but finally I was able to use scipy.fsolve to find the zeros of an expression which calculates the retarded times. This is not an efficient implementation, but seemed okay with a small number of points like 20 in each dimension. 
+
 The method `anim_video` of the `reference_frame` object makes a video of the fields generated with the particle moving in the given trajectory. It is called in the following way:
 ```
 rf.anim_video(p, 4, "circle_0.6_beta")
 ```
 The first parameter is the particle itself, which was defined earlier. The second parameter shows the time interval for which the video needs to be made. The output is a 6 second video with 4 fps. This can be alterated in the code if needed.
 
-# Example - Linear
-The complete code to generate the field variation of a moving charge with a velocity of 0.8*beta is as follows:
+# How to use this package
+
+The code can be cloned using this command:
+```
+git clone https://github.com/saipavanc/efvisual
+```
+
+An example usage is shown below for a moving charge with a velocity of 0.8*beta is as follows:
 ```
 from efvisual import *
 p = particle(1, ["0.6*t", "0"])
