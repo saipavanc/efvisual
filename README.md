@@ -34,13 +34,3 @@ rf.anim_video(p, 4, "uniform_vel_0.6_beta")
 ```
 
 I have added some video output examples along with a demo file to this repository.
-https://user-images.githubusercontent.com/79005467/111028294-bde7ca80-841b-11eb-88e9-6ffa49c15986.mp4
-
-
-https://user-images.githubusercontent.com/79005467/111028295-bfb18e00-841b-11eb-9e12-5128dfd26df5.mp4
-
-
-https://user-images.githubusercontent.com/79005467/111028296-c04a2480-841b-11eb-8682-396cc3039a0e.mp4
-
-
-[example_output_videos.zip](https://github.com/saipavanc/efvisual/files/6134673/example_output_videos.zip)
