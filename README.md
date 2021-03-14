@@ -31,6 +31,7 @@ The first parameter is the particle itself, which was defined earlier. The secon
 The code can be cloned using this command:
 ```
 git clone https://github.com/saipavanc/efvisual
+cd ./efvisual
 ```
 
 An example usage is shown below for a moving charge with a velocity of 0.8*beta is as follows:
